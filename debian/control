@@ -1,0 +1,24 @@
+Source: odr-sourcecompanion
+Section: non-free/hamradio
+Priority: optional
+Maintainer: Robin Alexander <robin.alexander@netplus.ch>
+Build-Depends: debhelper-compat (= 12),
+               libfdk-aac-dev,
+               libzmq3-dev
+Standards-Version: 4.6.0.1
+Homepage: https://www.opendigitalradio.org/mmbtools
+Vcs-Browser: https://github.com/opendigitalradio/debian-sourcecompanion
+Vcs-Git: https://github.com/opendigitalradio/debian-sourcecompanion.git
+
+Package: odr-sourcecompanion
+Architecture: any
+Multi-Arch: foreign
+Depends: libzmq5,
+         libfdk-aac2,
+         ${misc:Depends}, 
+         ${shlibs:Depends}
+Description: A tool to interconnect third-party audio encoders with ODR-DabMux
+ ODR-SourceCompanion v1 is compatible with ODR-PadEnc v3.
+ .
+ More information is available on the Opendigitalradio wiki
+ (http://opendigitalradio.org/)
